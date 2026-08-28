@@ -217,6 +217,48 @@ footer .wrap{border-top:1px solid var(--line);padding-top:24px;display:flex;just
   }
 }
 
+
+/* V23: Kontaktbereich */
+.contact-section{
+  padding:72px 0 36px;
+}
+.contact-card{
+  border:1px solid var(--line);
+  border-radius:26px;
+  background:#fff;
+  padding:34px;
+  box-shadow:0 14px 40px rgba(60,64,67,.07);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:28px;
+}
+.contact-copy h2{
+  margin:0 0 10px;
+  font-size:clamp(1.8rem,3vw,2.7rem);
+}
+.contact-copy p{
+  margin:0;
+  color:var(--muted);
+  max-width:680px;
+  line-height:1.65;
+}
+.contact-card .btn-primary{
+  flex:0 0 auto;
+  white-space:nowrap;
+}
+@media(max-width:700px){
+  .contact-section{padding:48px 0 24px}
+  .contact-card{
+    padding:24px;
+    align-items:flex-start;
+    flex-direction:column;
+  }
+  .contact-card .btn-primary{
+    width:100%;
+  }
+}
+
 </style></head><body>
 
 <header><div class="wrap"><nav>
@@ -249,4 +291,16 @@ footer .wrap{border-top:1px solid var(--line);padding-top:24px;display:flex;just
 <div class="info-box"><h3>3. Direkt loslegen</h3><p>Wir richten das Produkt vollständig für dein Unternehmen ein.</p></div><div class="info-box"><h3>4. Persönliche Übergabe &amp; kurze Einweisung</h3><p>Wir liefern das Produkt persönlich aus und zeigen dir vor Ort kurz, wie die Nutzung funktioniert.</p></div>
 </div>
 </div></section>
-</main><footer><div class="wrap"><div>© 2026 ReviewSpot</div><div>Einfach. Direkt. Einsatzbereit.</div></div></footer></body></html>
+</main>
+<section class="contact-section" id="kontakt">
+  <div class="wrap">
+    <div class="contact-card">
+      <div class="contact-copy">
+        <h2>Noch Fragen?</h2>
+        <p>Du bist dir noch nicht sicher, welches Produkt passt, oder hast eine andere Frage zu ReviewSpot? Schreib uns einfach direkt eine Nachricht.</p>
+      </div>
+      <a class="btn btn-primary" href="mailto:kontakt2reviewspot@gmail.com?subject=Kontaktanfrage%20ReviewSpot&body=Hallo%2C%0A%0Aich%20habe%20eine%20Frage%20zu%20ReviewSpot.%0A%0AUnternehmensname%3A%0AAnsprechpartner%3A%0AMeine%20Frage%20/%20Nachricht%3A%0A%0AVielen%20Dank%21">Kontakt aufnehmen</a>
+    </div>
+  </div>
+</section>
+<footer><div class="wrap"><div>© 2026 ReviewSpot</div><div>Einfach. Direkt. Einsatzbereit.</div></div></footer></body></html>

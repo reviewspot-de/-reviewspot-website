@@ -214,6 +214,32 @@ section .product-color-karte .similar-link{
   color:var(--text)!important;
 }
 
+
+/* V17: Sticker-Seite – bei ähnlichen Produkten nur der Rahmen farbig */
+section a[href="aufsteller.html"] h3,
+section a[href="aufsteller.html"] h2,
+section a[href="aufsteller.html"] strong,
+section a[href="aufsteller.html"] p,
+section a[href="aufsteller.html"] span,
+section a[href="aufsteller.html"],
+section a[href="karte.html"] h3,
+section a[href="karte.html"] h2,
+section a[href="karte.html"] strong,
+section a[href="karte.html"] p,
+section a[href="karte.html"] span,
+section a[href="karte.html"]{
+  color:var(--text)!important;
+  text-decoration:none;
+}
+
+/* Farbrahmen bleiben produktbezogen */
+section a[href="aufsteller.html"]{
+  border-top-color:var(--green)!important;
+}
+section a[href="karte.html"]{
+  border-top-color:var(--red)!important;
+}
+
 </style></head><body>
 
 <header><div class="wrap"><nav>

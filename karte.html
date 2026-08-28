@@ -61,6 +61,22 @@ p{line-height:1.65}
 .face{position:absolute;inset:0;backface-visibility:hidden;display:grid;place-items:center}
 .face.back{transform:rotateY(180deg)}
 .face img{max-width:100%;max-height:100%;object-fit:contain}
+
+/* ReviewSpot V11: schwarze Kartenrückseite vollständig sichtbar */
+.face.back img{
+  max-width:96%;
+  max-height:92%;
+  object-fit:contain;
+  transform:translateY(-20px);
+}
+@media(max-width:560px){
+  .face.back img{
+    max-width:95%;
+    max-height:90%;
+    transform:translateY(-12px);
+  }
+}
+
 .hint{margin-top:10px;color:var(--muted);font-size:.88rem;text-align:center;font-weight:700}
 .similar{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
 .similar .product-visual{height:280px}
@@ -93,16 +109,6 @@ footer .wrap{border-top:1px solid var(--line);padding-top:24px;display:flex;just
 .ribbon-inline.recommend{background:var(--green)}
 .ribbon-inline.value{background:var(--red)}
 
-
-/* Karten-Rückseite etwas höher und minimal kleiner, damit sie vollständig sichtbar bleibt */
-.face.back img{
-  transform:translateY(-18px) scale(.96);
-  transform-origin:center center;
-}
-@media(max-width:560px){
-  .face.back img{transform:translateY(-10px) scale(.95)}
-}
-
 @media(max-width:900px){
   .hero-grid,.detail-grid{grid-template-columns:1fr}
   .products{grid-template-columns:1fr}
@@ -133,19 +139,7 @@ footer .wrap{border-top:1px solid var(--line);padding-top:24px;display:flex;just
         <div class="hint">↻ Darüberfahren oder antippen, um die Rückseite zu sehen</div></div></div></div>
 <div class="detail-copy"><span class="tag">Mobil & beidseitig</span><span class="ribbon-inline value">Preis-Leistungs-Tipp</span><h1>ReviewSpot Karte</h1><div class="detail-price-row"><span class="old-detail-price">15 €</span><span class="detail-sale-price">10 €</span></div>
 <p class="muted">Die flexible Variante zum Auslegen, Vorzeigen oder direkten Übergeben an Kunden. Die weiße Vorderseite und schwarze Rückseite machen die Karte optisch vielseitig.</p><ul class="features"><li><span class="check">✓</span>NFC für kontaktloses Öffnen</li><li><span class="check">✓</span>Weiße Vorderseite und schwarze Rückseite</li><li><span class="check">✓</span>Mobil und flexibel einsetzbar</li><li><span class="check">✓</span>Fertig auf dein Unternehmen eingerichtet</li></ul>
-<a class="btn btn-primary" href="javascript:(()=>{const s='Karte';let a=s==='Sticker'?'1':'0',b=s==='Karte'?'1':'0',c=s==='Aufsteller'?'1':'0';const body=encodeURIComponent(`Hallo,
-
-ich interessiere mich für ReviewSpot und möchte folgende Produkte anfragen:
-
-ReviewSpot Aufsteller (20 €): ${c} Stück
-ReviewSpot Karte (10 €): ${b} Stück
-ReviewSpot Sticker (5 €): ${a} Stück
-
-Unternehmensname:
-Anschrift:
-Weitere Nachricht / Rückfrage:
-
-Vielen Dank !`);location.href='mailto:kontakt2reviewspot@gmail.com?subject='+encodeURIComponent('Bestellanfrage ReviewSpot')+'&body='+body;})()">Für 10 € anfragen</a>
+<a class="btn btn-primary" href="mailto:kontakt2reviewspot@gmail.com?subject=Bestellanfrage%20ReviewSpot&body=Hallo%2C%0A%0Aich%20interessiere%20mich%20f%C3%BCr%20ReviewSpot%20und%20m%C3%B6chte%20folgende%20Produkte%20anfragen%3A%0A%0AReviewSpot%20Aufsteller%20%2820%20%E2%82%AC%29%3A%200%20St%C3%BCck%0AReviewSpot%20Karte%20%2810%20%E2%82%AC%29%3A%201%20St%C3%BCck%0AReviewSpot%20Sticker%20%285%20%E2%82%AC%29%3A%200%20St%C3%BCck%0A%0AUnternehmensname%3A%0AAnschrift%3A%0AWeitere%20Nachricht%20/%20R%C3%BCckfrage%3A%0A%0AVielen%20Dank%20%21">>Für 10 € anfragen</a>
 </div></div></div></section>
 
 <section class="section"><div class="wrap">
@@ -156,19 +150,7 @@ Vielen Dank !`);location.href='mailto:kontakt2reviewspot@gmail.com?subject='+enc
 <div class="info-box"><h3>Einrichtung</h3><p>Komplett eingerichtet</p></div>
 </div>
 <div class="cta-box"><div><h2 style="font-size:2rem">Direkt einsatzbereit.</h2><p>Du musst nichts selbst programmieren oder verlinken. ReviewSpot wird vorbereitet geliefert.</p></div>
-<a class="btn btn-secondary" href="javascript:(()=>{const s='Karte';let a=s==='Sticker'?'1':'0',b=s==='Karte'?'1':'0',c=s==='Aufsteller'?'1':'0';const body=encodeURIComponent(`Hallo,
-
-ich interessiere mich für ReviewSpot und möchte folgende Produkte anfragen:
-
-ReviewSpot Aufsteller (20 €): ${c} Stück
-ReviewSpot Karte (10 €): ${b} Stück
-ReviewSpot Sticker (5 €): ${a} Stück
-
-Unternehmensname:
-Anschrift:
-Weitere Nachricht / Rückfrage:
-
-Vielen Dank !`);location.href='mailto:kontakt2reviewspot@gmail.com?subject='+encodeURIComponent('Bestellanfrage ReviewSpot')+'&body='+body;})()">Für 10 € anfragen</a></div>
+<a class="btn btn-secondary" href="mailto:kontakt2reviewspot@gmail.com?subject=Bestellanfrage%20ReviewSpot&body=Hallo%2C%0A%0Aich%20interessiere%20mich%20f%C3%BCr%20ReviewSpot%20und%20m%C3%B6chte%20folgende%20Produkte%20anfragen%3A%0A%0AReviewSpot%20Aufsteller%20%2820%20%E2%82%AC%29%3A%200%20St%C3%BCck%0AReviewSpot%20Karte%20%2810%20%E2%82%AC%29%3A%201%20St%C3%BCck%0AReviewSpot%20Sticker%20%285%20%E2%82%AC%29%3A%200%20St%C3%BCck%0A%0AUnternehmensname%3A%0AAnschrift%3A%0AWeitere%20Nachricht%20/%20R%C3%BCckfrage%3A%0A%0AVielen%20Dank%20%21">>Für 10 € anfragen</a></div>
 </div></section>
 
 <section class="section"><div class="wrap">

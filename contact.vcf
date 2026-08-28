@@ -3,8 +3,10 @@ VERSION:3.0
 N:ReviewSpot;Mr;;;
 FN:Mr ReviewSpot
 ORG:ReviewSpot
-EMAIL;TYPE=INTERNET,WORK:kontakt2reviewspot@gmail.com
-URL;TYPE=WORK:https://reviewspot-de.github.io/-reviewspot-website/
+item1.EMAIL;TYPE=INTERNET:kontakt2reviewspot@gmail.com
+item1.X-ABLabel:E-Mail
+item2.URL:https://reviewspot-de.github.io/-reviewspot-website/
+item2.X-ABLabel:Website
 PHOTO;ENCODING=b;TYPE=JPEG:/9j/4AAQSkZJRgABAQAASABIAAD/4QF8RXhpZgAATU0AKgA
  AAAgABgESAAMAAAABAAEAAAEaAAUAAAABAAAAVgEbAAUAAAABAAAAXgEoAAMAAAABAAIAAAEy
  AAIAAAAUAAAAZodpAAQAAAABAAAAegAAAAAAAABIAAAAAQAAAEgAAAABMjAyNjowODoyNiAxN
